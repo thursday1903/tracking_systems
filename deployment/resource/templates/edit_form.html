@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<title>Edit Sale</title>
+</head>
+<body>
+    <div align="center">
+        <h1>Cập nhật sản phẩm</h1>
+        <br />
+        <form action="#" th:action="@{/update}" th:object="${tblCardTypeDetails}"
+            method="post">
+ 
+            <table border="0" cellpadding="10">
+                <tr>
+                    <td>ID:</td>
+                    <td><input type="text" th:field="*{rowId}" readonly="readonly" /></td>
+                </tr>            
+                <tr>
+                    <td>Tên thẻ:</td>
+                    <td><input type="text" th:field="*{cardCode}" readonly="readonly"/></td>
+                </tr>
+                <tr>
+                    <td>Mệnh giá:</td>
+                    <td><input type="text" th:field="*{amount}" readonly="readonly"/></td>
+                </tr>
+                <tr>
+                    <td>Id đối tác:</td>
+                    <td><input type="text" th:field="*{partnerCardId}" readonly="readonly"/></td>
+                </tr>                            
+                <tr>
+                    <td>Min lưu kho:</td>
+                    <td><input type="text" th:field="*{minLimit}" /></td>
+                </tr>                            
+                <tr>
+                    <td>Max lưu kho:</td>
+                    <td><input type="text" th:field="*{maxLimit}" /></td>
+                </tr>                            
+                <tr>
+                    <td>Có tự động download:</td>
+                    <td><input type="text" th:field="*{autoDownload}" /></td>
+                </tr>                            
+                <tr>
+                    <td>Số lượng sẽ cảnh báo:</td>
+                    <td><input type="text" th:field="*{alertLimit}" /></td>
+                </tr>                            
+                <tr>
+                    <td>Có cảnh báo không?:</td>
+                    <td><input type="text" th:field="*{isAlert}" /></td>
+                </tr>                                                                    
+                <tr>
+                    <td colspan="2"><button type="submit" onclick="confirm('Bạn có thực sự muốn thay đổi giá trị?')">Cập nhật</button> </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>

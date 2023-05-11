@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<!--/* Title of this template will be passed to the head fragment along with custom links and scripts */-->
+<head
+	th:replace="fragments/mainLayout :: head(~{this :: title}, ~{this :: .custom-link})">
+<title>Countries</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Select2 -->
+<link class="custom-link" rel="stylesheet"
+	href="~/resources/static/plugins/select2/css/select2.min.css"
+	th:href="@{/static/plugins/select2/css/select2.min.css}">
+<link class="custom-link" rel="stylesheet"
+	href="~/resources/static/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css"
+	th:href="@{/static/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css}">
+
+</head>
+<body class="hold-transition sidebar-mini">
+
+	<div class="wrapper">
+
+		<nav th:replace="fragments/mainLayout :: header"></nav>
+
+		<aside th:replace="fragments/mainLayout :: sidebar"></aside>
+
+		<!-- Content Wrapper. Contains page content -->
+		<main
+			th:insert="fragments/mainLayout :: content(title=${pageTitle}, value=~{ :: #city_form_card})">
+
+			<!-- Main content -->
+			<section class="content">
+				<div class="container-fluid">
+					<div class="card card-info" id="city_form_card">
+						<div class="card-header">
+							<h3 class="card-title" id="module_title">Nhập tracking</h3>
+						</div>
+						
+						<form action="#" th:action="@{/transport/submit_create_tracking}"
+							th:object="${trackingLogs}" method="post">
+							<div class="card-body">
+								<div class="col-md-11" th:fragment="formFields">
+									<div class="form-group row">
+										<label for="cityName" class="col-form-label">ID:</label> <input
+											type="text" th:field="*{rowId}" class="form-control"
+											id="rowId" readonly="readonly"> <span
+											th:if="${#fields.hasErrors('rowId')}" th:errors="*{rowId}"
+											class="text-danger"></span>
+									</div>
+								</div>
+								<!--//.col -->
+								<div class="col-md-11" th:fragment="formFields">
+									<div class="form-group row">
+										<label for="cityName" class="col-form-label">Mã vận
+											đơn:</label> <input type="text" th:field="*{orderCode}"
+											class="form-control" id="orderCode">
+										<span th:if="${#fields.hasErrors('orderCode')}"
+											th:errors="*{orderCode}" class="text-danger"></span>
+									</div>
+								</div>
+								<!--//.col -->
+								<div class="col-md-11" th:fragment="formFields">
+									<div class="form-group row">
+										<label for="cityName" class="col-form-label">Mã tham
+											chiếu:</label> <input type="text" th:field="*{orderReferenceCode}"
+											class="form-control" id="orderReferenceCode">
+										<span th:if="${#fields.hasErrors('orderReferenceCode')}"
+											th:errors="*{orderReferenceCode}" class="text-danger"></span>
+									</div>
+								</div>
+								<!--//.col -->
+								<div class="col-md-11" th:fragment="formFields">
+									<div class="form-group row">
+										<label for="cityName" class="col-form-label">Ngày cập nhật:</label> <input type="date"  th:field="*{changeDate}"
+											class="form-control" id="changeDate">
+										<span th:if="${#fields.hasErrors('changeDate')}"
+											th:errors="*{changeDate}" class="text-danger"></span>
+									</div>
+								</div>
+								<!--//.col -->								
+								<div class="col-md-11" th:fragment="formFields">
+									<div class="form-group row">
+										<label for="cityName" class="col-form-label">Địa điểm:</label>
+										<input type="text" th:field="*{logLocation}"
+											class="form-control" id="logLocation">
+										<span th:if="${#fields.hasErrors('logLocation')}"
+											th:errors="*{logLocation}" class="text-danger"></span>
+									</div>
+								</div>
+								<!--//.col -->
+								<div class="col-md-11" th:fragment="formFields">
+									<div class="form-group row">
+										<label for="countryCode" class="col-form-label">Mã
+											trạng thái</label> <select th:object="${trackingCode}"
+											class="form-control select2bs4" id="stateId" name="stateId">
+											<option value="">Chọn 1 trạng thái...</option>
+											<option th:each="country : ${trackingCode}"
+												th:value="${country.stateId}"
+												th:text="${country.trackingCode}" />
+										</select>
+									</div>
+								</div>
+								<!--//.col -->
+								<div class="col-md-11" th:fragment="formFields">
+									<div class="form-group row">
+										<label for="cityName" class="col-form-label">Ghi chú:</label>
+										<input type="text" th:field="*{remark}" class="form-control"
+											id="remark">
+										<span th:if="${#fields.hasErrors('remark')}"
+											th:errors="*{remark}" class="text-danger"></span>
+									</div>
+								</div>
+								<!--//.col -->
+
+							</div>
+							<div class="card-footer">
+
+								<input type="submit" class="btn btn-primary" value="Save">
+								<a href="/transport/tracking_logs"
+									class="btn btn-default float-right">Hủy</a>
+
+							</div>
+							<!--//.card-footer -->
+						</form>
+					</div>
+					<!--//.card -->
+				</div>
+				<!-- /.container-fluid -->
+			</section>
+			<!-- /.content -->
+		</main>
+
+
+		<footer
+			th:replace="fragments/mainLayout :: footer(~{this :: .custom-script})">
+			Footer
+
+			<!-- DataTables -->
+			<script class="custom-script"
+				src="~/resources/static/plugins/select2/js/select2.full.min.js"
+				th:src="@{/static/plugins/select2/js/select2.full.min.js}"></script>
+
+			<script class="custom-script">
+                    $(function () {
+                        $('.select2bs4').select2({
+                            theme: 'bootstrap4'
+                        });
+
+                    });
+                </script>
+                <script>
+			var today = moment().format('DD-MM-YYYY');
+			 $('#changeDate').val(today);
+			 $('#toDate').val(today);
+			 </script>
+		</footer>
+
+	</div>
+	<!-- ./wrapper -->
+
+</body>
+</html>

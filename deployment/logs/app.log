@@ -1,0 +1,315 @@
+2022-08-20 21:28:55,795 INFO com.system.MainApplication [restartedMain] Starting MainApplication v1.0.0 using Java 1.8.0_271 on PTDV01 with PID 1588 (E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment\lib\application.jar started by VietAnh in E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment)
+2022-08-20 21:28:55,799 DEBUG com.system.MainApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-08-20 21:28:55,801 INFO com.system.MainApplication [restartedMain] The following profiles are active: dev
+2022-08-20 21:29:02,314 INFO com.system.MainApplication [restartedMain] Started MainApplication in 7.033 seconds (JVM running for 8.898)
+2022-08-20 21:29:26,453 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-9] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-08-20 21:29:27,221 INFO com.system.controllers.ToolController [http-nio-6789-exec-3] request to /tool/query_pin
+page:0
+size:20
+from:null
+to:null
+serial:null
+exportExcel:
+
+2022-08-20 21:32:33,997 INFO com.system.MainApplication [restartedMain] Starting MainApplication v1.0.0 using Java 1.8.0_271 on PTDV01 with PID 19692 (E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment\lib\application.jar started by VietAnh in E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment)
+2022-08-20 21:32:33,997 DEBUG com.system.MainApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-08-20 21:32:33,997 INFO com.system.MainApplication [restartedMain] The following profiles are active: dev
+2022-08-20 21:32:39,079 INFO com.system.MainApplication [restartedMain] Started MainApplication in 5.436 seconds (JVM running for 5.957)
+2022-08-20 21:32:54,424 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-7] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-08-20 21:33:01,679 INFO com.system.controllers.ToolController [http-nio-6789-exec-7] request to /tool/query_pin
+page:0
+size:20
+from:null
+to:null
+serial:null
+exportExcel:
+
+2022-08-20 21:37:53,730 INFO com.system.MainApplication [restartedMain] Starting MainApplication v1.0.0 using Java 1.8.0_271 on PTDV01 with PID 19548 (E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment\lib\application.jar started by VietAnh in E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment)
+2022-08-20 21:37:53,732 DEBUG com.system.MainApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-08-20 21:37:53,733 INFO com.system.MainApplication [restartedMain] The following profiles are active: dev
+2022-08-20 21:37:58,908 INFO com.system.MainApplication [restartedMain] Started MainApplication in 5.543 seconds (JVM running for 6.079)
+2022-08-20 21:38:12,315 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-9] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-08-20 21:38:13,539 INFO com.system.controllers.ToolController [http-nio-6789-exec-7] request to /tool/query_pin
+page:0
+size:20
+from:null
+to:null
+serial:null
+exportExcel:
+
+2022-08-20 21:42:01,428 INFO com.system.MainApplication [restartedMain] Starting MainApplication v1.0.0 using Java 1.8.0_271 on PTDV01 with PID 1292 (E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment\lib\application.jar started by VietAnh in E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment)
+2022-08-20 21:42:01,430 DEBUG com.system.MainApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-08-20 21:42:01,431 INFO com.system.MainApplication [restartedMain] The following profiles are active: dev
+2022-08-20 21:42:06,793 INFO com.system.MainApplication [restartedMain] Started MainApplication in 5.752 seconds (JVM running for 6.345)
+2022-08-20 21:42:14,325 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-6] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-08-20 21:42:17,482 INFO com.system.controllers.ToolController [http-nio-6789-exec-1] request to /card/query_pin
+page:0
+size:20
+from:null
+to:null
+serial:null
+exportExcel:
+
+2022-08-20 21:52:03,156 INFO com.system.MainApplication [restartedMain] Starting MainApplication v1.0.0 using Java 1.8.0_271 on PTDV01 with PID 21440 (E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment\lib\application.jar started by VietAnh in E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment)
+2022-08-20 21:52:03,156 DEBUG com.system.MainApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-08-20 21:52:03,156 INFO com.system.MainApplication [restartedMain] The following profiles are active: dev
+2022-08-20 21:52:08,277 INFO com.system.MainApplication [restartedMain] Started MainApplication in 5.478 seconds (JVM running for 5.99)
+2022-08-20 21:52:32,151 INFO com.system.controllers.ToolController [http-nio-6789-exec-8] request to /card/query_pin
+page:0
+size:20
+from:null
+to:null
+serial:null
+exportExcel:
+
+2022-08-20 21:53:18,140 INFO com.system.MainApplication [restartedMain] Starting MainApplication v1.0.0 using Java 1.8.0_271 on PTDV01 with PID 20476 (E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment\lib\application.jar started by VietAnh in E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment)
+2022-08-20 21:53:18,140 DEBUG com.system.MainApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-08-20 21:53:18,140 INFO com.system.MainApplication [restartedMain] The following profiles are active: dev
+2022-08-20 21:53:23,176 INFO com.system.MainApplication [restartedMain] Started MainApplication in 5.391 seconds (JVM running for 5.909)
+2022-08-20 21:53:37,980 INFO com.system.controllers.ToolController [http-nio-6789-exec-8] request to /card/query_pin
+page:0
+size:20
+from:null
+to:null
+serial:null
+exportExcel:
+
+2022-08-20 22:04:16,137 INFO com.system.MainApplication [restartedMain] Starting MainApplication v1.0.0 using Java 1.8.0_271 on PTDV01 with PID 9004 (E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment\lib\application.jar started by VietAnh in E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment)
+2022-08-20 22:04:16,139 DEBUG com.system.MainApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-08-20 22:04:16,139 INFO com.system.MainApplication [restartedMain] The following profiles are active: dev
+2022-08-20 22:04:21,659 INFO com.system.MainApplication [restartedMain] Started MainApplication in 5.907 seconds (JVM running for 6.52)
+2022-08-20 22:04:30,277 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-1] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-08-20 22:04:31,303 INFO com.system.controllers.ToolController [http-nio-6789-exec-5] request to /card/query_pin
+page:0
+size:20
+from:null
+to:null
+serial:null
+exportExcel:
+
+2022-08-20 22:09:58,417 INFO com.system.MainApplication [restartedMain] Starting MainApplication v1.0.0 using Java 1.8.0_271 on PTDV01 with PID 11312 (E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment\lib\application.jar started by VietAnh in E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment)
+2022-08-20 22:09:58,419 DEBUG com.system.MainApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-08-20 22:09:58,421 INFO com.system.MainApplication [restartedMain] The following profiles are active: dev
+2022-08-20 22:10:03,797 INFO com.system.MainApplication [restartedMain] Started MainApplication in 5.736 seconds (JVM running for 6.27)
+2022-08-20 22:10:15,439 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-9] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-08-20 22:10:16,862 INFO com.system.controllers.ToolController [http-nio-6789-exec-6] request to /card/query_pin
+page:0
+size:20
+from:null
+to:null
+serial:null
+exportExcel:
+
+2022-08-20 22:14:54,799 INFO com.system.MainApplication [restartedMain] Starting MainApplication v1.0.0 using Java 1.8.0_271 on PTDV01 with PID 22072 (E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment\lib\application.jar started by VietAnh in E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment)
+2022-08-20 22:14:54,801 DEBUG com.system.MainApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-08-20 22:14:54,802 INFO com.system.MainApplication [restartedMain] The following profiles are active: dev
+2022-08-20 22:15:00,419 INFO com.system.MainApplication [restartedMain] Started MainApplication in 5.983 seconds (JVM running for 6.516)
+2022-08-20 22:15:14,387 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-6] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-08-20 22:15:17,794 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-10] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-08-20 22:15:19,372 INFO com.system.controllers.ToolController [http-nio-6789-exec-6] request to /card/searchPin
+page:0
+size:20
+from:null
+to:null
+serial:null
+exportExcel:
+
+2022-08-20 22:20:54,691 INFO com.system.MainApplication [restartedMain] Starting MainApplication v1.0.0 using Java 1.8.0_271 on PTDV01 with PID 23216 (E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment\lib\application.jar started by VietAnh in E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment)
+2022-08-20 22:20:54,692 DEBUG com.system.MainApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-08-20 22:20:54,693 INFO com.system.MainApplication [restartedMain] The following profiles are active: dev
+2022-08-20 22:20:59,945 INFO com.system.MainApplication [restartedMain] Started MainApplication in 5.619 seconds (JVM running for 6.239)
+2022-08-20 22:21:09,238 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-10] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-08-20 22:21:10,068 INFO com.system.controllers.ToolController [http-nio-6789-exec-8] request to /card/searchPin
+page:0
+size:20
+from:null
+to:null
+serial:null
+exportExcel:
+
+2022-08-20 22:29:00,727 INFO com.system.MainApplication [restartedMain] Starting MainApplication v1.0.0 using Java 1.8.0_271 on PTDV01 with PID 9648 (E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment\lib\application.jar started by VietAnh in E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment)
+2022-08-20 22:29:00,729 DEBUG com.system.MainApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-08-20 22:29:00,730 INFO com.system.MainApplication [restartedMain] The following profiles are active: dev
+2022-08-20 22:29:07,295 INFO com.system.MainApplication [restartedMain] Started MainApplication in 6.949 seconds (JVM running for 7.523)
+2022-08-20 22:29:18,860 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-8] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-08-20 22:29:20,180 INFO com.system.controllers.ToolController [http-nio-6789-exec-3] request to /card/searchPin
+page:0
+size:20
+from:null
+to:null
+serial:null
+exportExcel:
+
+2022-08-20 22:44:59,848 INFO com.system.MainApplication [restartedMain] Starting MainApplication v1.0.0 using Java 1.8.0_271 on PTDV01 with PID 21884 (E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment\lib\application.jar started by VietAnh in E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment)
+2022-08-20 22:44:59,850 DEBUG com.system.MainApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-08-20 22:44:59,851 INFO com.system.MainApplication [restartedMain] The following profiles are active: dev
+2022-08-20 22:45:05,183 INFO com.system.MainApplication [restartedMain] Started MainApplication in 5.713 seconds (JVM running for 6.241)
+2022-08-20 22:45:20,602 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-9] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-08-20 22:45:24,442 INFO com.system.controllers.ToolController [http-nio-6789-exec-6] request to /report/searchPin
+page:0
+size:20
+from:null
+to:null
+serial:null
+exportExcel:
+
+2022-08-20 22:45:35,859 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-2] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-08-20 22:45:38,972 INFO com.system.controllers.ToolController [http-nio-6789-exec-4] request to /report/searchPin
+page:0
+size:20
+from:null
+to:null
+serial:null
+exportExcel:
+
+2022-08-20 22:47:34,233 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-2] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-08-20 22:47:37,803 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-7] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-08-20 22:47:51,322 INFO com.system.controllers.ToolController [http-nio-6789-exec-5] request to /report/searchPin
+page:0
+size:20
+from:null
+to:null
+serial:null
+exportExcel:
+
+2022-08-20 22:51:47,982 INFO com.system.MainApplication [restartedMain] Starting MainApplication v1.0.0 using Java 1.8.0_271 on PTDV01 with PID 22108 (E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment\lib\application.jar started by VietAnh in E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment)
+2022-08-20 22:51:47,984 DEBUG com.system.MainApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-08-20 22:51:47,985 INFO com.system.MainApplication [restartedMain] The following profiles are active: dev
+2022-08-20 22:51:53,152 INFO com.system.MainApplication [restartedMain] Started MainApplication in 5.527 seconds (JVM running for 6.055)
+2022-08-20 22:52:05,959 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-2] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-08-20 22:52:07,607 INFO com.system.controllers.ToolController [http-nio-6789-exec-5] request to /report/searchPin
+page:0
+size:20
+from:null
+to:null
+serial:null
+exportExcel:
+
+2022-08-20 22:54:43,202 INFO com.system.MainApplication [restartedMain] Starting MainApplication v1.0.0 using Java 1.8.0_271 on PTDV01 with PID 19356 (E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment\lib\application.jar started by VietAnh in E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment)
+2022-08-20 22:54:43,204 DEBUG com.system.MainApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-08-20 22:54:43,205 INFO com.system.MainApplication [restartedMain] The following profiles are active: dev
+2022-08-20 22:54:48,752 INFO com.system.MainApplication [restartedMain] Started MainApplication in 5.911 seconds (JVM running for 6.44)
+2022-08-20 22:54:56,443 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-6] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-08-20 22:54:57,406 INFO com.system.controllers.ToolController [http-nio-6789-exec-4] request to /report/searchPin
+page:0
+size:20
+from:null
+to:null
+serial:null
+exportExcel:
+
+2022-08-20 23:03:54,954 INFO com.system.MainApplication [restartedMain] Starting MainApplication v1.0.0 using Java 1.8.0_271 on PTDV01 with PID 15084 (E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment\lib\application.jar started by VietAnh in E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment)
+2022-08-20 23:03:54,956 DEBUG com.system.MainApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-08-20 23:03:54,957 INFO com.system.MainApplication [restartedMain] The following profiles are active: dev
+2022-08-20 23:04:00,180 INFO com.system.MainApplication [restartedMain] Started MainApplication in 5.579 seconds (JVM running for 6.144)
+2022-08-20 23:04:09,206 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-7] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-08-20 23:04:12,726 INFO com.system.controllers.ToolController [http-nio-6789-exec-10] request to /report/searchPin
+page:0
+size:20
+from:null
+to:null
+serial:null
+exportExcel:
+

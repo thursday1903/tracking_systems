@@ -1,0 +1,253 @@
+2022-07-22 14:55:43,129 INFO com.system.MainApplication [restartedMain] Starting MainApplication v1.0.0 using Java 1.8.0_271 on PTDV01 with PID 24320 (E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment\lib\application.jar started by VietAnh in E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment)
+2022-07-22 14:55:43,131 DEBUG com.system.MainApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-07-22 14:55:43,132 INFO com.system.MainApplication [restartedMain] The following profiles are active: dev
+2022-07-22 14:55:49,028 INFO com.system.MainApplication [restartedMain] Started MainApplication in 6.335 seconds (JVM running for 7.141)
+2022-07-22 14:56:03,548 INFO com.system.controllers.SoftpinController [http-nio-6789-exec-7] request to /report/stock
+page:0
+size:20
+from:null
+to:null
+
+2022-07-22 14:56:21,546 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-3] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-07-22 14:56:40,005 INFO com.system.controllers.SoftpinController [http-nio-6789-exec-9] request to /report/stock
+page:0
+size:20
+from:null
+to:null
+
+2022-07-22 14:59:20,109 INFO com.system.MainApplication [restartedMain] Starting MainApplication v1.0.0 using Java 1.8.0_271 on PTDV01 with PID 11132 (E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment\lib\application.jar started by VietAnh in E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment)
+2022-07-22 14:59:20,111 DEBUG com.system.MainApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-07-22 14:59:20,112 INFO com.system.MainApplication [restartedMain] The following profiles are active: dev
+2022-07-22 14:59:25,307 INFO com.system.MainApplication [restartedMain] Started MainApplication in 5.587 seconds (JVM running for 6.187)
+2022-07-22 14:59:29,743 INFO com.system.controllers.SoftpinController [http-nio-6789-exec-1] request to /report/softpin_stock:
+page:0
+size:20
+from:null
+to:null
+
+2022-07-22 14:59:33,647 INFO com.system.controllers.SoftpinController [http-nio-6789-exec-10] request to /report/softpin_stock:
+page:0
+size:20
+from:null
+to:null
+
+2022-07-22 15:03:20,478 INFO com.system.MainApplication [restartedMain] Starting MainApplication v1.0.0 using Java 1.8.0_271 on PTDV01 with PID 29932 (E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment\lib\application.jar started by VietAnh in E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment)
+2022-07-22 15:03:20,480 DEBUG com.system.MainApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-07-22 15:03:20,481 INFO com.system.MainApplication [restartedMain] The following profiles are active: dev
+2022-07-22 15:03:25,702 INFO com.system.MainApplication [restartedMain] Started MainApplication in 5.645 seconds (JVM running for 6.194)
+2022-07-22 15:03:31,707 INFO com.system.controllers.SoftpinController [http-nio-6789-exec-1] request to /report/softpin_stock:
+page:0
+size:20
+from:null
+to:null
+
+2022-07-22 15:03:59,878 INFO com.system.MainApplication [restartedMain] Starting MainApplication v1.0.0 using Java 1.8.0_271 on PTDV01 with PID 7908 (E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment\lib\application.jar started by VietAnh in E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment)
+2022-07-22 15:03:59,881 DEBUG com.system.MainApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-07-22 15:03:59,882 INFO com.system.MainApplication [restartedMain] The following profiles are active: dev
+2022-07-22 15:04:05,024 INFO com.system.MainApplication [restartedMain] Started MainApplication in 5.513 seconds (JVM running for 6.054)
+2022-07-22 15:04:12,033 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-7] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-07-22 15:04:13,208 INFO com.system.controllers.SoftpinController [http-nio-6789-exec-10] request to /report/softpin_stock:
+page:0
+size:20
+from:null
+to:null
+
+2022-07-22 15:06:11,656 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-6] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-07-22 15:06:13,121 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-5] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-07-22 15:06:15,902 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-10] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-07-22 15:06:31,749 INFO com.system.controllers.SoftpinController [http-nio-6789-exec-9] request to /report/softpin_stock:
+page:0
+size:20
+from:null
+to:null
+
+2022-07-22 15:08:30,389 INFO com.system.MainApplication [restartedMain] Starting MainApplication v1.0.0 using Java 1.8.0_271 on PTDV01 with PID 16788 (E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment\lib\application.jar started by VietAnh in E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment)
+2022-07-22 15:08:30,391 DEBUG com.system.MainApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-07-22 15:08:30,392 INFO com.system.MainApplication [restartedMain] The following profiles are active: dev
+2022-07-22 15:08:35,722 INFO com.system.MainApplication [restartedMain] Started MainApplication in 5.692 seconds (JVM running for 6.309)
+2022-07-22 15:08:39,200 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-8] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-07-22 15:08:41,886 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-1] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-07-22 15:08:46,124 INFO com.system.controllers.SoftpinController [http-nio-6789-exec-3] request to /report/softpin_stock:
+page:0
+size:20
+from:null
+to:null
+
+2022-07-22 15:16:10,792 INFO com.system.MainApplication [restartedMain] Starting MainApplication v1.0.0 using Java 1.8.0_271 on PTDV01 with PID 28416 (E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment\lib\application.jar started by VietAnh in E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment)
+2022-07-22 15:16:10,795 DEBUG com.system.MainApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-07-22 15:16:10,797 INFO com.system.MainApplication [restartedMain] The following profiles are active: dev
+2022-07-22 15:16:16,109 INFO com.system.MainApplication [restartedMain] Started MainApplication in 5.686 seconds (JVM running for 6.261)
+2022-07-22 15:16:57,855 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-5] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-07-22 15:17:00,502 INFO com.system.controllers.SoftpinController [http-nio-6789-exec-9] request to /report/softpin_stock:
+
+2022-07-22 15:21:59,272 INFO com.system.MainApplication [restartedMain] Starting MainApplication v1.0.0 using Java 1.8.0_271 on PTDV01 with PID 20620 (E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment\lib\application.jar started by VietAnh in E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment)
+2022-07-22 15:21:59,274 DEBUG com.system.MainApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-07-22 15:21:59,275 INFO com.system.MainApplication [restartedMain] The following profiles are active: dev
+2022-07-22 15:22:04,504 INFO com.system.MainApplication [restartedMain] Started MainApplication in 5.607 seconds (JVM running for 6.169)
+2022-07-22 15:22:08,243 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-7] request to /report/softpin_stock:
+
+2022-07-22 15:30:42,388 INFO com.system.MainApplication [restartedMain] Starting MainApplication v1.0.0 using Java 1.8.0_271 on PTDV01 with PID 23696 (E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment\lib\application.jar started by VietAnh in E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment)
+2022-07-22 15:30:42,391 DEBUG com.system.MainApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-07-22 15:30:42,396 INFO com.system.MainApplication [restartedMain] The following profiles are active: dev
+2022-07-22 15:30:47,550 INFO com.system.MainApplication [restartedMain] Started MainApplication in 5.531 seconds (JVM running for 6.079)
+2022-07-22 15:31:01,427 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-8] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-07-22 15:31:02,232 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-1] request to /report/softpin_stock:
+
+2022-07-22 15:42:29,299 INFO com.system.MainApplication [restartedMain] Starting MainApplication v1.0.0 using Java 1.8.0_271 on PTDV01 with PID 5208 (E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment\lib\application.jar started by VietAnh in E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment)
+2022-07-22 15:42:29,302 DEBUG com.system.MainApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-07-22 15:42:29,302 INFO com.system.MainApplication [restartedMain] The following profiles are active: dev
+2022-07-22 15:42:34,484 INFO com.system.MainApplication [restartedMain] Started MainApplication in 5.542 seconds (JVM running for 6.092)
+2022-07-22 15:42:39,833 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-7] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-07-22 15:42:41,117 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-1] request to /softpin/softpin_stock:
+
+2022-07-22 15:51:30,675 INFO com.system.MainApplication [restartedMain] Starting MainApplication v1.0.0 using Java 1.8.0_271 on PTDV01 with PID 6952 (E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment\lib\application.jar started by VietAnh in E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment)
+2022-07-22 15:51:30,677 DEBUG com.system.MainApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-07-22 15:51:30,678 INFO com.system.MainApplication [restartedMain] The following profiles are active: dev
+2022-07-22 15:51:36,079 INFO com.system.MainApplication [restartedMain] Started MainApplication in 5.775 seconds (JVM running for 6.323)
+2022-07-22 15:51:38,268 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-1] request to /softpin/softpin_stock:
+
+2022-07-22 15:51:44,474 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-9] request to /softpin/softpin_stock:
+
+2022-07-22 15:55:47,383 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-9] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-07-22 15:55:49,496 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-6] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-07-22 15:55:51,063 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-7] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-07-22 15:57:06,308 INFO com.system.MainApplication [restartedMain] Starting MainApplication v1.0.0 using Java 1.8.0_271 on PTDV01 with PID 29752 (E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment\lib\application.jar started by VietAnh in E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment)
+2022-07-22 15:57:06,311 DEBUG com.system.MainApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-07-22 15:57:06,312 INFO com.system.MainApplication [restartedMain] The following profiles are active: dev
+2022-07-22 15:57:11,647 INFO com.system.MainApplication [restartedMain] Started MainApplication in 5.7 seconds (JVM running for 6.27)
+2022-07-22 15:57:16,630 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-8] request to /softpin/softpin_stock:
+
+2022-07-22 15:58:17,036 INFO com.system.MainApplication [restartedMain] Starting MainApplication v1.0.0 using Java 1.8.0_271 on PTDV01 with PID 9604 (E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment\lib\application.jar started by VietAnh in E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment)
+2022-07-22 15:58:17,038 DEBUG com.system.MainApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-07-22 15:58:17,039 INFO com.system.MainApplication [restartedMain] The following profiles are active: dev
+2022-07-22 15:58:22,429 INFO com.system.MainApplication [restartedMain] Started MainApplication in 5.764 seconds (JVM running for 6.346)
+2022-07-22 15:58:26,579 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-7] request to /softpin/softpin_stock:
+
+2022-07-22 17:56:04,594 INFO com.system.MainApplication [restartedMain] Starting MainApplication v1.0.0 using Java 1.8.0_271 on PTDV01 with PID 25024 (E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment\lib\application.jar started by VietAnh in E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment)
+2022-07-22 17:56:04,597 DEBUG com.system.MainApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-07-22 17:56:04,598 INFO com.system.MainApplication [restartedMain] The following profiles are active: dev
+2022-07-22 17:56:09,624 INFO com.system.MainApplication [restartedMain] Started MainApplication in 5.382 seconds (JVM running for 5.945)
+2022-07-22 17:56:15,388 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-1] request to /softpin/softpin_stock:
+
+2022-07-22 17:56:19,133 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-7] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-07-22 17:56:21,009 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-10] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-07-22 17:56:23,268 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-6] request to /softpin/softpin_stock:
+
+2022-07-22 19:46:18,622 INFO com.system.MainApplication [restartedMain] Starting MainApplication v1.0.0 using Java 1.8.0_271 on PTDV01 with PID 20412 (E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment\lib\application.jar started by VietAnh in E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment)
+2022-07-22 19:46:18,624 DEBUG com.system.MainApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-07-22 19:46:18,625 INFO com.system.MainApplication [restartedMain] The following profiles are active: dev
+2022-07-22 19:46:24,964 INFO com.system.MainApplication [restartedMain] Started MainApplication in 6.75 seconds (JVM running for 7.342)
+2022-07-22 19:49:09,502 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-10] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+
+2022-07-22 19:55:26,888 INFO com.system.MainApplication [restartedMain] Starting MainApplication v1.0.0 using Java 1.8.0_271 on PTDV01 with PID 14892 (E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment\lib\application.jar started by VietAnh in E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment)
+2022-07-22 19:55:26,891 DEBUG com.system.MainApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-07-22 19:55:26,892 INFO com.system.MainApplication [restartedMain] The following profiles are active: dev
+2022-07-22 19:55:32,618 INFO com.system.MainApplication [restartedMain] Started MainApplication in 6.172 seconds (JVM running for 6.774)
+2022-07-22 19:55:49,748 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-7] request to /softpin/softpin_stock:
+
+2022-07-22 20:01:38,384 INFO com.system.MainApplication [restartedMain] Starting MainApplication v1.0.0 using Java 1.8.0_271 on PTDV01 with PID 25612 (E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment\lib\application.jar started by VietAnh in E:\IMEDIA\JAVA_HOLALIFE\cms_topup\deployment)
+2022-07-22 20:01:38,387 DEBUG com.system.MainApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-07-22 20:01:38,388 INFO com.system.MainApplication [restartedMain] The following profiles are active: dev
+2022-07-22 20:01:44,557 INFO com.system.MainApplication [restartedMain] Started MainApplication in 6.593 seconds (JVM running for 7.24)
+2022-07-22 20:01:57,298 INFO com.system.controllers.DirectTransController [http-nio-6789-exec-7] request to /report/direct_detail
+page:0
+size:20
+from:null
+to:null
+exportExcel:
+

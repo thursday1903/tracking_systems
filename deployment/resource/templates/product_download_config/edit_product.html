@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+    <!--/* Title of this template will be passed to the head fragment along with custom links and scripts */-->
+    <head th:replace="fragments/mainLayout :: head(~{this :: title}, ~{this :: .custom-link})">
+        <title>Countries</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Select2 -->
+        <link class="custom-link" rel="stylesheet" href="~/resources/static/plugins/select2/css/select2.min.css" th:href="@{/static/plugins/select2/css/select2.min.css}">
+        <link class="custom-link" rel="stylesheet" href="~/resources/static/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css" th:href="@{/static/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css}">
+
+    </head>
+    <body class="hold-transition sidebar-mini">
+
+        <div class="wrapper">
+
+            <nav th:replace="fragments/mainLayout :: header">
+            </nav>
+            
+            <aside th:replace="fragments/mainLayout :: sidebar">
+            </aside>
+
+           <!-- Content Wrapper. Contains page content -->
+            <main th:insert="fragments/mainLayout :: content(title=${pageTitle}, value=~{ :: #city_form_card})">    
+
+                <!-- Main content -->
+                <section class="content">
+                    <div  class="container-fluid">
+                        <div class="card card-info" id="city_form_card">
+                            <div class="card-header">
+                                <h3 class="card-title" id="module_title">Tạo mới config</h3>
+                            </div> 
+                            <form action="#"
+                                  th:action="@{/product_download_config/update}"
+                                  th:object="${tblCardTypeDetails}" method="post">
+                                <div class="card-body">
+                                    <div class="col-md-11" th:fragment="formFields">
+                                       <div class="form-group row">
+                                                <label for="cityName" class="col-form-label">ID:</label> 
+                                                <input
+                                                    type="text" th:field="*{rowId}" class="form-control" id="rowId"
+                                                    readonly="readonly" > 
+                                                <span
+                                                    th:if="${#fields.hasErrors('rowId')}" th:errors="*{rowId}"
+                                                    class="text-danger"></span>
+                                            </div>     
+                                    </div><!--//.col -->
+                                    <div class="col-md-11" th:fragment="formFields">
+                                       <div class="form-group row">
+                                                <label for="cityName" class="col-form-label">Tên thẻ:</label> 
+                                                <input
+                                                    type="text" th:field="*{cardCode}" class="form-control" id="cardCode"
+                                                    readonly="readonly" > 
+                                                <span
+                                                    th:if="${#fields.hasErrors('cardCode')}" th:errors="*{cardCode}"
+                                                    class="text-danger"></span>
+                                            </div>     
+                                    </div><!--//.col -->
+                                    <div class="col-md-11" th:fragment="formFields">
+                                       <div class="form-group row">
+                                                <label for="cityName" class="col-form-label">Mệnh giá:</label> 
+                                                <input
+                                                    type="text" th:field="*{amount}" class="form-control" id="amount"
+                                                    readonly="readonly" > 
+                                                <span
+                                                    th:if="${#fields.hasErrors('amount')}" th:errors="*{amount}"
+                                                    class="text-danger"></span>
+                                            </div>     
+                                    </div><!--//.col -->
+                                    <div class="col-md-11" th:fragment="formFields">
+                                       <div class="form-group row">
+                                                <label for="cityName" class="col-form-label">Id đối tác:</label> 
+                                                <input
+                                                    type="text" th:field="*{partnerCardId}" class="form-control" id="partnerCardId"
+                                                    readonly="readonly" > 
+                                                <span
+                                                    th:if="${#fields.hasErrors('partnerCardId')}" th:errors="*{partnerCardId}"
+                                                    class="text-danger"></span>
+                                            </div>     
+                                    </div><!--//.col -->
+                                    <div class="col-md-11" th:fragment="formFields">
+                                       <div class="form-group row">
+                                                <label for="cityName" class="col-form-label">Min lưu kho:</label> 
+                                                <input
+                                                    type="text" th:field="*{minLimit}" class="form-control" id="partnerCardId"
+                                                    > 
+                                                <span
+                                                    th:if="${#fields.hasErrors('minLimit')}" th:errors="*{minLimit}"
+                                                    class="text-danger"></span>
+                                            </div>     
+                                    </div><!--//.col -->
+                                    <div class="col-md-11" th:fragment="formFields">
+                                       <div class="form-group row">
+                                                <label for="cityName" class="col-form-label">Max lưu kho:</label> 
+                                                <input
+                                                    type="text" th:field="*{maxLimit}" class="form-control" id="maxLimit"
+                                                    > 
+                                                <span
+                                                    th:if="${#fields.hasErrors('maxLimit')}" th:errors="*{maxLimit}"
+                                                    class="text-danger"></span>
+                                            </div>     
+                                    </div><!--//.col -->
+                                    <div class="col-md-11" th:fragment="formFields">
+                                       <div class="form-group row">
+                                                <label for="cityName" class="col-form-label">Có tự động download:</label> 
+                                                <input
+                                                    type="text" th:field="*{autoDownload}" class="form-control" id="autoDownload"
+                                                    > 
+                                                <span
+                                                    th:if="${#fields.hasErrors('autoDownload')}" th:errors="*{autoDownload}"
+                                                    class="text-danger"></span>
+                                            </div>     
+                                    </div><!--//.col -->
+                                    <div class="col-md-11" th:fragment="formFields">
+                                       <div class="form-group row">
+                                                <label for="cityName" class="col-form-label">Giới hạn cảnh báo:</label> 
+                                                <input
+                                                    type="text" th:field="*{alertLimit}" class="form-control" id="alertLimit"
+                                                    > 
+                                                <span
+                                                    th:if="${#fields.hasErrors('alertLimit')}" th:errors="*{alertLimit}"
+                                                    class="text-danger"></span>
+                                            </div>     
+                                    </div><!--//.col -->
+                                    <div class="col-md-11" th:fragment="formFields">
+                                       <div class="form-group row">
+                                                <label for="cityName" class="col-form-label">Có cảnh báo không?:</label> 
+                                                <input
+                                                    type="text" th:field="*{isAlert}" class="form-control" id="isAlert"
+                                                    > 
+                                                <span
+                                                    th:if="${#fields.hasErrors('isAlert')}" th:errors="*{isAlert}"
+                                                    class="text-danger"></span>
+                                            </div>     
+                                    </div><!--//.col -->
+                                </div>
+                                <div class="card-footer">
+                                    
+                                        <input type="submit" class="btn btn-primary" value="Save" th:if="${tblCardTypeDetails.maxLimit>tblCardTypeDetails.minLimit}">
+                                        <a href="/product_download_config/list_product_config" class="btn btn-default float-right">Hủy</a>
+                                    
+                                </div><!--//.card-footer -->
+                            </form>
+                        </div><!--//.card -->
+                    </div><!-- /.container-fluid -->
+                </section><!-- /.content -->
+            </main> 
+            
+            
+            <footer th:replace="fragments/mainLayout :: footer(~{this :: .custom-script})">
+                Footer
+
+                <!-- DataTables -->
+                <script class="custom-script" src="~/resources/static/plugins/select2/js/select2.full.min.js" th:src="@{/static/plugins/select2/js/select2.full.min.js}"></script>
+
+                <script class="custom-script">
+                    $(function () {
+                        $('.select2bs4').select2({
+                            theme: 'bootstrap4'
+                        });
+
+                    });
+                </script>
+            </footer>
+
+        </div><!-- ./wrapper -->
+
+    </body>
+</html>

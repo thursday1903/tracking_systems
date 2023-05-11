@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+    <!--/* Title of this template will be passed to the head fragment along with custom links and scripts */-->
+    <head th:replace="fragments/mainLayout :: head(~{this :: title}, ~{this :: .custom-link})">
+        <title>New Country</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Select2 -->
+        <link class="custom-link" rel="stylesheet" href="../../static/plugins/select2/css/select2.min.css" th:href="@{/static/plugins/select2/css/select2.min.css}">
+        <link class="custom-link" rel="stylesheet" href="../../static/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css" th:href="@{/static/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css}">
+
+    </head>
+    <body class="hold-transition sidebar-mini">
+
+        <div class="wrapper">
+
+            <nav th:replace="fragments/mainLayout :: header">
+            </nav>
+            
+            <aside th:replace="fragments/mainLayout :: sidebar">
+            </aside>
+
+            <!-- Content Wrapper. Contains page content -->
+            <main th:insert="fragments/mainLayout :: content(title=${pageTitle}, value=~{ :: #city_form_card})">    
+
+                <!-- Main content -->
+                <section class="content">
+                    <div  class="container-fluid">
+                        <div class="card card-info" id="city_form_card">
+                            <div class="card-header">
+                                <h3 class="card-title" id="module_title">Tra cứu thẻ VTT-Data</h3>
+                            </div> 
+                            <form action="#"
+                                  th:action="@{/report/searchVttData}"
+                                  th:object="${cardDetail}" method="post">
+                                <div class="card-body">
+                                    <div class="col-md-11" th:fragment="formFields">
+                                       <div class="form-group row">
+                                                <label for="cityName" class="col-form-label">Pin Serial:</label> 
+                                                <input
+                                                    type="text" th:field="*{serial}" class="form-control" id="serial"
+                                                    > 
+                                                <span
+                                                    th:if="${#fields.hasErrors('serial')}" th:errors="*{serial}"
+                                                    class="text-danger"></span>
+                                            </div>     
+                                    </div><!--//.col -->
+                                    <div class="col-md-11" th:fragment="formFields">
+                                       <div class="form-group row">
+                                                <label for="cityName" class="col-form-label">Mô tả chi tiết:</label> 
+                                                <input
+                                                    type="text" readonly="readonly" th:field="*{status_card_message}" class="form-control" id="status"
+                                                    > 
+                                                <span
+                                                    th:if="${#fields.hasErrors('status_card_message')}" th:errors="*{status_card_message}"
+                                                    class="text-danger"></span>
+                                            </div>     
+                                    </div><!--//.col -->
+                                    <div class="col-md-11" th:fragment="formFields">
+                                       <div class="form-group row">
+                                                <label for="cityName" class="col-form-label">status:</label> 
+                                                <input
+                                                    type="text" th:field="*{status}" class="form-control" id="status"
+                                                    > 
+                                                <span
+                                                    th:if="${#fields.hasErrors('status')}" th:errors="*{status}"
+                                                    class="text-danger"></span>
+                                            </div>     
+                                    </div><!--//.col -->
+                                </div>
+                                <div class="card-footer">                                    
+                                        <input type="submit" class="btn btn-primary" name="submitQuery">
+                                        <a href="#" class="btn btn-default float-right">Hủy</a>                                    
+                                </div><!--//.card-footer -->
+                            </form>
+                        </div><!--//.card -->
+                    </div><!-- /.container-fluid -->
+                </section><!-- /.content -->
+            </main> 
+            
+            
+            <footer th:replace="fragments/mainLayout :: footer(~{this :: .custom-script})">
+                Footer
+
+                <!-- DataTables -->
+                <script class="custom-script" src="../../static/plugins/select2/js/select2.full.min.js" th:src="@{/static/plugins/select2/js/select2.full.min.js}"></script>
+
+                <script class="custom-script">
+                    $(function () {
+                        $('.select2bs4').select2({
+                            theme: 'bootstrap4'
+                        });
+
+                    });
+                </script>
+            </footer>
+
+        </div><!-- ./wrapper -->
+
+    </body>
+</html>

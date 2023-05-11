@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--
+The MIT License
+
+Copyright 2020 Ozar <gosocial2@ozar.net>.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+-->
+<html xmlns:th="https://www.thymeleaf.org/">
+    <!--/* Title of this template will be passed to the head fragment along with custom links and scripts */-->
+    <head th:replace="fragments/mainLayout :: head(~{this :: title}, ~{this :: .custom-link})">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Truy vấn thẻ</title>
+
+        <!-- DataTables -->
+        <link class="custom-link" rel="stylesheet" href="~/resources/static/plugins/datatables-bs4/css/dataTables.bootstrap4.css" th:href="@{/static/plugins/datatables-bs4/css/dataTables.bootstrap4.css}">
+
+    </head>
+    <body class="hold-transition sidebar-mini">
+
+        <div class="wrapper">
+
+            <nav th:replace="fragments/mainLayout :: header">
+            </nav>
+            
+            <aside th:replace="fragments/header :: sidebar">
+            </aside>
+
+            <!-- Content Wrapper. Contains page content -->
+            <main th:insert="fragments/mainLayout :: content(title=${pageTitle}, value=~{ :: #city_list})">    
+                <!-- Main content -->
+                <section class="content">
+                    <div  class="container-fluid">
+                        <div class="card card-info" id="city_list">
+                            <div class="card-header">
+                            <h3 class="card-title" id="module_title">Chi tiết giao dịch</h3>
+                            </div>
+						<form th:action="@{/report/searchPin}" method="get" th:object="${paging}">
+							<div>
+							<input type="text" th:name="page" th:field="${paging.page}"/> 
+							<input type="text" th:name="size" th:field="${paging.size}"/> 
+								<label for="student-birth-date">Serial thẻ:</label> <textarea rows="4" cols="50"
+									 id="pinSerial" th:name="pinSerial"  th:field="${paging.pinSerial}" />
+								<label for="student-birth-date">Đến ngày:</label> <input
+									type="date" id="toDate" th:name="toDate" th:field="${paging.toDate}" />
+							</div>
+							<div>
+								<button type="submit" class="button" >Tìm kiếm</button>
+							</div>
+						</form>
+						<div class="card-body">
+                                <table class="table table-bordered table-striped using-data-table">
+                                    <thead>
+                                        <tr>
+                                        <th>ID</th>
+										<th>Serial</th>
+										<th>Trạng thái</th>
+										<th>Id mua</th>
+										<th>Ngày import</th>
+										<th>Id bán</th>
+										<th>Ngày bán</th>
+										<th>Mã giao dịch đại lý</th>
+										<th>Id đại lý</th>										
+										<th>Username đại lý</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr th:if="${lstPinDetail.empty}">
+                                            <td colspan="2">No record found.</td> 
+                                        </tr>
+                                        <tr th:if="${lstPinDetail.empty}">
+                                            <td colspan="2">Tổng số giao dịch</td> 
+											<label id="labelTotal">${lstPinDetail.getTotalElements()}</label>
+                                        </tr>
+                                        <tr th:each="item : ${lstPinDetail}">
+											<td th:text="${item.softpinId}"></td>
+											<td th:text="${item.softpinSerialNumber}"></td>
+											<td th:text="${item.softpinStatus}"></td>
+											<td th:text="${item.importBatchId}"></td>
+											<td th:text="${item.importCheckDatetime}"></td>
+											<td th:text="${item.transactionId}"></td>
+											<td th:text="${item.registerDatetime}"></td>
+											<td th:text="${item.requestId}"></td>                                           
+											<td th:text="${item.merchantId}"></td>                                           
+											<td th:text="${item.merchantUsername}"></td>                                                                                       
+                                        </tr>                                        
+                                    </tbody>
+                                </table>
+                                </div><!--//.card-body -->
+                            </div>
+                        </div>
+                    </div><!-- /.container-fluid -->
+                </section> <!-- /.content -->
+            </main> 
+            
+            
+            <div id="confirm2delete" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="confirm2deleteLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="confirm2deleteLabel">Confirm to delete record</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Are you sure you want to delete this record?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                            <a class="btn btn-danger btn-confirm"> Yes, Delete It! </a>
+                        </div><!--//.modal-footer -->
+                    </div><!--//.modal-content -->
+                </div><!--//.modal-dialog -->
+            </div><!--//.modal -->
+
+            <footer th:replace="fragments/mainLayout :: footer(~{this :: .custom-script})">
+                Footer
+
+                <!-- DataTables -->
+                <script class="custom-script" src="~/resources/static/plugins/datatables/jquery.dataTables.js" th:src="@{/static/plugins/datatables/jquery.dataTables.js}"></script>
+                <script class="custom-script" src="~/resources/static/plugins/datatables-bs4/js/dataTables.bootstrap4.js" th:src="@{/static/plugins/datatables-bs4/js/dataTables.bootstrap4.js}"></script>
+                
+            </footer>
+			<script>
+			var today = moment().format('YYYY-MM-DD');
+			 $('#fromDate').val(today);
+			 $('#toDate').val(today);
+			 </script>
+        </div><!-- ./wrapper -->
+
+    </body>
+</html>

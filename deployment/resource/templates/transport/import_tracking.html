@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<!--/* Title of this template will be passed to the head fragment along with custom links and scripts */-->
+<head
+	th:replace="fragments/mainLayout :: head(~{this :: title}, ~{this :: .custom-link})">
+<title>Countries</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Select2 -->
+<link class="custom-link" rel="stylesheet"
+	href="~/resources/static/plugins/select2/css/select2.min.css"
+	th:href="@{/static/plugins/select2/css/select2.min.css}">
+<link class="custom-link" rel="stylesheet"
+	href="~/resources/static/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css"
+	th:href="@{/static/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css}">
+
+</head>
+<body class="hold-transition sidebar-mini">
+
+	<div class="wrapper">
+
+		<nav th:replace="fragments/mainLayout :: header"></nav>
+
+		<aside th:replace="fragments/mainLayout :: sidebar"></aside>
+
+		<!-- Content Wrapper. Contains page content -->
+		<main
+			th:insert="fragments/mainLayout :: content(title=${pageTitle}, value=~{ :: #city_form_card})">
+
+			<!-- Main content -->
+			<section class="content">
+				<div class="container-fluid">
+					<div class="card card-info" id="city_form_card">
+						<div class="card-header">
+							<h3 class="card-title" id="module_title">Nhập tracking bằng file</h3>
+						</div>
+						<form th:action="@{/utils/uploadfile}" method="post" enctype="multipart/form-data">
+							<div>							 
+								<input type="file" name="file" class="form-control-file" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">									 								
+							</div>
+							<div>							 
+								 									 							
+							</div>
+							<div>
+								<button type="submit" class="button">Xử lý</button>							
+							</div>
+						</form>
+						<div class="card-body">
+											
+					</div>
+					<!--//.card -->
+				</div>
+				<!-- /.container-fluid -->
+			</section>
+			<!-- /.content -->
+		</main>
+
+
+		<footer
+			th:replace="fragments/mainLayout :: footer(~{this :: .custom-script})">
+			Footer
+
+			<!-- DataTables -->
+			<script class="custom-script"
+				src="~/resources/static/plugins/select2/js/select2.full.min.js"
+				th:src="@{/static/plugins/select2/js/select2.full.min.js}"></script>
+
+			<script class="custom-script">
+                    $(function () {
+                        $('.select2bs4').select2({
+                            theme: 'bootstrap4'
+                        });
+
+                    });
+                </script>
+                <script>
+			var today = moment().format('DD-MM-YYYY');
+			 $('#changeDate').val(today);
+			 $('#toDate').val(today);
+			 </script>
+		</footer>
+
+	</div>
+	<!-- ./wrapper -->
+
+</body>
+</html>

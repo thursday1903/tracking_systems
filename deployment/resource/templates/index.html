@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8"/>
+<title>Download configuration</title>
+</head>
+<body>
+<div align="center">
+    <h1>Danh sách cấu hình sản phẩm</h1>
+    <a href="/new">Tạo mới</a>
+    <br/><br/>
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Tên sản phẩm</th>
+                <th>Giá trị</th>
+                <th>Partner product id</th>
+                <th>Lưu kho nhỏ nhất</th>
+                <th>Lưu kho lớn nhất</th>
+				<th>Có tự động download?</th>
+				<th>Số lượng cảnh báo</th>
+				<th>Có cảnh báo?</th>
+                <th>Actions</th>
+                <th>Lần cuối thay đổi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="item : ${listCardTypeDetail}">
+				<td th:text="${item.rowId}">ID</td>
+				<td th:text="${item.cardCode}">Card Code</td>
+				<td th:text="${item.amount}">Mệnh giá</td>
+				<td th:text="${item.partnerCardId}">Id đối tác</td>
+				<td th:text="${item.minLimit}"></td>
+				<td th:text="${item.maxLimit}"></td>
+				<td th:text="${item.autoDownload}==1?'Có':'Không'"></td>
+				<td th:text="${item.alertLimit}"></td>
+				<td th:text="${item.isAlert}==1?'Có':'Không'"></td>
+                <td>
+                    <a th:href="@{'/edit/' + ${item.rowId}}">Thay đổi</a>
+                    &nbsp;&nbsp;&nbsp;
+                </td>
+				<td th:text="${item.latestUpdate}"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>   
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+The MIT License
+
+Copyright 2020 Ozar <gosocial2@ozar.net>.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+-->
+<html xmlns:th="https://www.thymeleaf.org/">
+    <!--/* Title of this template will be passed to the head fragment along with custom links and scripts */-->
+    <head th:replace="fragments/mainLayout :: head(~{this :: title}, ~{this :: .custom-link})">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Chi tiết giao dịch</title>
+
+        <!-- DataTables -->
+        <link class="custom-link" rel="stylesheet" href="~/resources/static/plugins/datatables-bs4/css/dataTables.bootstrap4.css" th:href="@{/static/plugins/datatables-bs4/css/dataTables.bootstrap4.css}">
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+        // Load the Visualization API and the corechart package.
+        google.charts.load('current', {'packages':['corechart']});
+
+        // Set a callback to run when the Google Visualization API is loaded.
+        google.charts.setOnLoadCallback(drawChart);
+
+        // Callback that creates and populates a data table,
+        // instantiates the pie chart, passes in the data and
+        // draws it.
+        function drawChart() {
+
+            // Create the data table.
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Topping');
+            data.addColumn('number', 'Slices');
+            data.addRows([[${chartData}]]);
+
+            // Set chart options
+            var options = {'title':'How Much Pizza I Ate Last Night',
+                'width':400,
+                'height':300};
+
+            // Instantiate and draw our chart, passing in some options.
+            var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+        }
+    </script>
+    </head>
+    <body class="hold-transition sidebar-mini">
+
+        <div class="wrapper">
+
+            <nav th:replace="fragments/mainLayout :: header">
+            </nav>
+            
+            <aside th:replace="fragments/header :: sidebar">
+            </aside>
+
+            <!-- Content Wrapper. Contains page content -->
+            <main th:insert="fragments/mainLayout :: content(title=${pageTitle}, value=~{ :: #city_list})">    
+                <!-- Main content -->
+                <section class="content">
+                    <div  class="container-fluid">                        
+                            <div class="card-header">
+                            <h3 class="card-title" id="module_title">Chi tiết giao dịch</h3>
+                            </div>
+							<form th:action="@{/report/charts_report}" method="get">
+							<div id="chart_div"></div> 
+							</form>						         
+                            </div>
+                        
+                    </div><!-- /.container-fluid -->
+                </section> <!-- /.content -->
+            </main> 
+            </div><!-- ./wrapper -->
+
+    </body>
+</html>
