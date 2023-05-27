@@ -1,5 +1,13 @@
 
 /****** Object:  Table [dbo].[payment_gateway_transactions]    Script Date: 15/05/2023 5:50:20 PM ******/
+IF NOT EXISTS(SELECT * FROM sys.databases WHERE name = 'ewallet_gw')
+BEGIN
+CREATE DATABASE ewallet_gw
+END
+GO
+USE ewallet_gw
+GO
+
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
