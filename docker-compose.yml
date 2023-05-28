@@ -1,0 +1,42 @@
+version: "3.2"
+services:
+  db:
+    image: sql-server:0.0.1
+    build:
+      dockerfile: db/Dockerfile
+    networks:
+      - default
+    ports:
+      - "1433:1433"
+    container_name: sql_server
+    hostname: sql_server
+    volumes:
+      - db:/sql
+    restart: "no"
+    # command: 
+    #   - ls
+      # - /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P @123456A
+      # - "/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P @123456A -i database_tracking.sql"
+      # - "/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P @123456A -i database_tracking.sql"
+
+  web:
+    image: app:0.0.1
+    build:
+      dockerfile: Dockerfile
+    networks:
+      - default
+    container_name: tracker-app
+    hostname: tracker-app
+    ports:
+      - "8080:8080"
+    volumes:
+      - app-data:/data
+    depends_on:
+      - db
+
+volumes:
+  db:
+  app-data:
+
+networks:
+  default:
