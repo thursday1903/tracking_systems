@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <header>
-    <link rel="stylesheet" href="../../static/css/style.css">
+    <link rel="stylesheet" th:href="@{static/css/style.css}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -65,7 +65,7 @@
 
 <body>
     <div class="container-img">
-        <img src="../../static/img/1.jpg" alt="Cover" style="width:100%;">
+        <img th:src="@{static/img/1.jpg}" alt="Cover" style="width:100%;">
         <div class="centered">
             <h1>SLOGAN OF THE COMPANY</h1>
             <p> This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.</p>

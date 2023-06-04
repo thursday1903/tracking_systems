@@ -38,20 +38,20 @@ public class WebMvcConfig  extends WebMvcConfigurationSupport {
     private static final String RESOURCES_LOCATION = "/static/";
     private static final String RESOURCES_HANDLER = RESOURCES_LOCATION + "**";
     
-    
+    @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler(RESOURCES_HANDLER).addResourceLocations("classpath:"+RESOURCES_LOCATION);
         
-        registry.addResourceHandler(
-                "/static/**",
-                "/img/**",
-                "/css/**",
-                "/js/**")
-                .addResourceLocations(
-                        "classpath:/static/",
-                        "classpath:/static/img/",
-                        "classpath:/static/css/",
-                        "classpath:/static/js/");
+        // registry.addResourceHandler(
+        //         "/static/**",
+        //         "/static/img/**",
+        //         "/static/css/**",
+        //         "/static/js/**")
+        //         .addResourceLocations(
+        //                 "classpath:/static/",
+        //                 "classpath:/static/img/",
+        //                 "classpath:/static/css/",
+        //                 "classpath:/static/js/");
     }
     
     @Override
