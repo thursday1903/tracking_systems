@@ -38,10 +38,10 @@ public class WebMvcConfig  extends WebMvcConfigurationSupport {
     private static final String RESOURCES_LOCATION = "/static/";
     private static final String RESOURCES_HANDLER = RESOURCES_LOCATION + "**";
     
-    @Override
+    
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler(RESOURCES_HANDLER).addResourceLocations("classpath:"+RESOURCES_LOCATION);
-        /*
+        
         registry.addResourceHandler(
                 "/static/**",
                 "/img/**",
@@ -52,12 +52,12 @@ public class WebMvcConfig  extends WebMvcConfigurationSupport {
                         "classpath:/static/img/",
                         "classpath:/static/css/",
                         "classpath:/static/js/");
-        */
     }
     
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/login").setViewName("/login");
         registry.addViewController("/card/searchPin").setViewName("/card/searchPin");
+
     }
 }
